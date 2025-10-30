@@ -1,6 +1,6 @@
-# TUI Calculator Pro (C89) — README
+# TUI Calculator Pro (C89)
 
-一个用纯 C89 实现的跨平台终端计算器，支持变量、历史、角度模式、微分/求根/积分、ASCII 曲线绘制以及十六进制/二进制等“进阶功能”。单文件源码：`tui_calc.c`。核心实现基于词法分析 → Shunting Yard 转后缀式（RPN）→ 计算栈，兼容老环境（Dev-C++/旧 MinGW 等）。
+一个用纯 C89 实现的跨平台终端计算器，支持变量、历史、角度模式、微分/求根/积分、ASCII 曲线绘制以及十六进制/二进制等“进阶功能”。单文件源码：`tui_calc.c`。核心实现基于词法分析 → Shunting Yard 转后缀式（RPN）→ 计算栈，兼容老环境（Dev-C++/旧 MinGW 等）（给我学弟写的作业）。
 
 ---
 
