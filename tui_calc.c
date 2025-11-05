@@ -453,21 +453,21 @@ static int eval_with_var(const char* expr,const char* vname,double x,double* out
 /* ------------ UI ------------ */
 static void render_panel(const char* last_msg){
     clear_screen();
-    printf("┌─────────────────────────────── TUI Calculator Pro ───────────────────────────┐\n");
-    printf("│ Angle: %-3s  | Memory: %-12.6g | Last(ans): %-14.8g                         │\n",
+    printf("┌─────────────────────────────── TUI Calculator Pro ────────────────────────────────┐\n");
+    printf("│ Angle: %-3s  | Memory: %-12.6g | Last(ans): %-14.8g                    │\n",
            (g_mode==MODE_DEG?"DEG":"RAD"), g_memory, g_last_result);
-    printf("├──────────────────────────────────────────────────────────────────────────────┤\n");
-    printf("│ 直接输入表达式并回车；'=' 重复上一次；变量：/let x=3.2、/vars、/del x           │\n");
-    printf("│ 高级：/diff /solve /integ /plot     进制：/hex /bin     模式：/deg /rad         │\n");
-    printf("│ 历史：/history /save <file>   内存：/mc /mr /m+ [v] /m- [v]   帮助：/help       │\n");
-    printf("├──────────────────────────────────────────────────────────────────────────────┤\n");
+    printf("├───────────────────────────────────────────────────────────────────────────────────┤\n");
+    printf("│ 直接输入表达式并回车；'=' 重复上一次；变量：/let x=3.2、/vars、/del x             │\n");
+    printf("│ 高级：/diff /solve /integ /plot     进制：/hex /bin     模式：/deg /rad           │\n");
+    printf("│ 历史：/history /save <file>   内存：/mc /mr /m+ [v] /m- [v]   帮助：/help         │\n");
+    printf("├───────────────────────────────────────────────────────────────────────────────────┤\n");
     if(last_msg && last_msg[0]){
         printf("│ 提示 Hint: %-70.70s │\n", last_msg);
-        printf("├──────────────────────────────────────────────────────────────────────────────┤\n");
+        printf("├───────────────────────────────────────────────────────────────────────────────────┤\n");
     }
-    printf("│ 示例： sin(30)+cos(60) [/deg] | pow(2,10) | 5!+20%% | 使用变量：/let x=1.2;    │\n");
-    printf("│      /diff sin(x) x 0.5 1e-5  | /plot sin(x) x -3.14 3.14 70 20               │\n");
-    printf("└──────────────────────────────────────────────────────────────────────────────┘\n");
+    printf("│ 示例： sin(30)+cos(60) [/deg] | pow(2,10) | 5!+20%% | 使用变量：/let x=1.2;        │\n");
+    printf("│      /diff sin(x) x 0.5 1e-5  | /plot sin(x) x -3.14 3.14 70 20                   │\n");
+    printf("└───────────────────────────────────────────────────────────────────────────────────┘\n");
 }
 
 /* ------------ 命令 ------------ */
@@ -799,4 +799,3 @@ int main(int argc,char** argv){
     }
     return 0;
 }
-

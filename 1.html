@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>课堂实践练习 (初学者版)</title>
+</head>
+<body>
+
+    <h3>社会主义核心价值观的内容如下:</h3>
+    <input type="button" onclick="showMessage()" value="点击查看" />
+
+    <ol id="hxjzg">
+        </ol>
+
+    <script>
+        function showMessage() {
+            var coreValues = [
+                '国家层面：富强 民主 文明 和谐',
+                '社会层面：自由 平等 公正 法制',
+                '个人层面：爱国 敬业 诚信 友善'
+            ];
+            var olElement = document.getElementById('hxjzg');
+            olElement.innerHTML = '';
+            for (var i = 0; i < coreValues.length; i++) {
+                var liElement = document.createElement('li');
+                liElement.textContent = coreValues[i];
+                olElement.appendChild(liElement);
+            }
+        }
+    </script>
+
+</body>
+</html>
