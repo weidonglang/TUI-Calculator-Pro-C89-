@@ -125,7 +125,3 @@ gcc tui_calc.c -O2 -o calc.exe -lm
 * 看不到完整历史或变量列表？使用 `/history`、`/vars` 后**按回车返回**主界面。
 * 想验证环境/编译器兼容性：运行 `--selftest`。
 
----
-
-
-需要我把这些内容保存为 `README.md` 并附上几段示例吗？
